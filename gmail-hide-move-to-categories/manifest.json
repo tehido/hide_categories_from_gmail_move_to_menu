@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Gmail Move To Cleaner",
+  "version": "1.0",
+  "description": "Hides Social, Updates, Forums and Promotions categories from the Gmail 'Move to' menu.",
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
